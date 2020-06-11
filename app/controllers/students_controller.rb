@@ -1,7 +1,7 @@
 class StudentsController < ApplicationController
   get '/students' do
     @students = Student.all
-    erb :"students/index.html.erb"
+    erb :"index.html.erb"
   end
 
   get '/students/new' do
